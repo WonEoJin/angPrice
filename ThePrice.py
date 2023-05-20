@@ -24,18 +24,17 @@ with open(target_path, encoding="utf-8", mode="r") as f :
 with open(target_path, encoding="utf-8", mode="r") as f :
   shop = f.read()
 
-shop
+
 
 
 
 shop = shop.replace("오레ㄴ지", "오렌지")
-shop
+
 
 
 with open(target_path, mode='w', encoding='utf-8') as f:
     f.write(shop)
 
-* 파일 내용 확인
 
 # 오타가 수정되었음을 확인하는 코드를 작성하라.
 
@@ -52,7 +51,7 @@ with target_path.open(mode='r', encoding='utf-8') as f:
       if price != 'A':  
         shop_dict[goods] = int(price.rstrip('원'))
 
-shop_dict
+
 
 
 def shopping(shop_file):
@@ -67,9 +66,9 @@ def shopping(shop_file):
           shop_dict[goods] = int(price.rstrip('원'))
 
     return shop_dict
-print(shopping("shopA.txt"))
+
 
 def item_price(shop_file, item):
     return shopping(shop_file)[item]
 
-print(item_price("shopA.txt", '김치'))
+
