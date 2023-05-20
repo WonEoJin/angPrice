@@ -19,27 +19,12 @@ def myWget(filename):
 target_path, _ = myWget("shopA.txt")
 
 with open(target_path, encoding="utf-8", mode="r") as f :
-  print(f.read())
-
-with open(target_path, encoding="utf-8", mode="r") as f :
   shop = f.read()
-
-
-
-
 
 shop = shop.replace("오레ㄴ지", "오렌지")
 
-
-
 with open(target_path, mode='w', encoding='utf-8') as f:
     f.write(shop)
-
-
-# 오타가 수정되었음을 확인하는 코드를 작성하라.
-
-with target_path.open(mode='r', encoding='utf-8') as f:
-    print(f.read())
 
 with target_path.open(mode='r', encoding='utf-8') as f:
     shop_dict = {}
@@ -50,9 +35,6 @@ with target_path.open(mode='r', encoding='utf-8') as f:
         goods, price = price_of_goods 
       if price != 'A':  
         shop_dict[goods] = int(price.rstrip('원'))
-
-
-
 
 def shopping(shop_file):
     shop_dict = {} # 생성할 사전 객체
