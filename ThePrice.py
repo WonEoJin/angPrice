@@ -180,9 +180,6 @@ print(price_comparison('김치'))
 **다이빙 기록 관련**
 
 **문제 7**
-
-# 코드를 작성하라.
-
 myWget("results10m.txt")
 
 scores_10m = {}
