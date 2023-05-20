@@ -181,9 +181,6 @@ print(price_comparison('김치'))
 
 **문제 7**
 
-[5미터 다이빙 기록 에서 등수를 확인하는 작업](https://codingalzi.github.io/pybook/files.html#sec-exp-diving-5m)과 
-동일한 작업을 10미터 다이빙 기록에 대해 진행하라.
-
 # 코드를 작성하라.
 
 myWget("results10m.txt")
